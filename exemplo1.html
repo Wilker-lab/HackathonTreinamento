@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento</title>
+    <script>
+        function clickNoBotao(){
+            alert("Olá, Mundo");
+        }
+        function atualizaTexto(){
+            let input = document.getElementById("meuinput");
+            let p = document.getElementById("para");
+                p.textContent = input.value;
+                console.log("passei aqui");
+            
+        }
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <h1>Título</h1>
+        <h2>Título2 </h2>
+        <p id="para">Texto qualquer</p>
+        <spam>Informações</spam>
+    </div>
+    <img src="img.jfif" />
+    <a href="https://google.com.br"> Link para o Google</a>
+    <div>
+        <input id="meuinput" type="text" oninput="atualizaTexto()" />
+        <select>
+            <option>opção 1</option>
+            <option>opção 2</option>
+            <option>opção 3</option>
+        </select>
+        <button onclick="clickNoBotao()">Texto do botão</button>
+    </div>    
+</body>
+
+</html>
